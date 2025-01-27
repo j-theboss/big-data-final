@@ -1,0 +1,21 @@
+FROM debian:latest
+RUN apt-get update && apt-get upgrade -y 
+
+# Install git
+RUN apt-get install git -y
+RUN git config --global user.name "yo"
+RUN git config --global user.email "yo@yo.yo"
+
+# Install python
+RUN apt-get install -y python3
+RUN apt-get install -y python3-venv
+
+#create a venv
+RUN python3 -m venv /venv
+# Enable venv
+ENV PATH="/venv/bin:$PATH"
+
+# install libraries
+RUN pip install pyspark
+#install java
+RUN apt install default-jre default-jdk -y
