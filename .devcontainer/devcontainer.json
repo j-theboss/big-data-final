@@ -1,5 +1,0 @@
-{
-	"name": "Python 3 -- TEST",
-	"build": { "dockerfile": "dockerfile" },
-	"extensions": ["ms-python.python","ms-azuretools.vscode-docker","ms-toolsai.jupyter","streetsidesoftware.code-spell-checker","streetsidesoftware.code-spell-checker-spanish","continue.continue"]
-}
